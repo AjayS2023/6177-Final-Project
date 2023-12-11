@@ -27,6 +27,43 @@ app.get('/', (req, res) => {
     res.send('Hi, my name is Ajay Shankar. Welcome to my final project.')
 });
 
+/**
+ * @swagger
+ * /dataset:
+ *      get: 
+ *          description: retrieves one dataset
+ *          produces:   
+ *              - application/json
+ *          responses:
+ *              200:
+ *                  description: Operation completed successfully
+ *              400: 
+ *                  description: The request was malformed
+ *              404: 
+ *                  description: The dataset with the specified name was not found
+ */
+app.get('/dataset', (req, res)=> {
+    res.redirect('https://centraluseuap.dev.cognitive.microsoft.com/docs/services/unified-vision-apis-public-preview-2023-02-01-preview/operations/63c227a15ddd17166ce42740');
+});
+
+
+/**
+ * @swagger
+ * /datasets:
+ *      get: 
+ *          description: retrieves all datasets
+ *          produces:   
+ *              - application/json
+ *          responses:
+ *              200:
+ *                  description: Operation completed successfully
+ *              400: 
+ *                  description: The request was malformed
+ */
+app.get('/datasets', (req, res) => {
+    res.redirect('https://centraluseuap.dev.cognitive.microsoft.com/docs/services/unified-vision-apis-public-preview-2023-02-01-preview/operations/63c227a15ddd17166ce42743');
+});
+
 
 app.use(cors);
 
