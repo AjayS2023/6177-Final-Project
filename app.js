@@ -13,7 +13,7 @@ const options = {
             version: '1.0.0',
             description: 'final project API'
         },
-        host: 'localhost:3000',
+        host: '64.225.8.225:3000',
         basePath: '/',
     },
     apis: ['./app.js']
